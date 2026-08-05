@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#68172d">
+  <meta name="description" content="Protótipo navegável do Mercês Connect — comunicação escolar simples e direta.">
+  <title>Mercês Connect — Protótipo de Apresentação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="demo-ribbon">PROTÓTIPO • DADOS FICTÍCIOS</div>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand-mark">M</div>
+        <div>
+          <span class="school-label">COLÉGIO NOSSA SENHORA DAS MERCÊS</span>
+          <h1>Mercês <span>Connect</span></h1>
+        </div>
+      </div>
+      <button class="icon-button" aria-label="Notificações" onclick="showNotifications()">
+        <span>🔔</span><b class="notification-dot">2</b>
+      </button>
+    </header>
+
+    <div class="role-switch" aria-label="Alternar visão da demonstração">
+      <button id="role-parent" class="active" onclick="switchRole('parent')">👨‍👩‍👧 Responsável</button>
+      <button id="role-school" onclick="switchRole('school')">🏫 Escola</button>
+    </div>
+
+    <main id="app"></main>
+    <nav id="bottom-nav" class="bottom-nav"></nav>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
